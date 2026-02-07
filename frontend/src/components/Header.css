@@ -1,0 +1,128 @@
+/* ================= HEADER ================= */
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 0 30px;
+
+  background: linear-gradient(90deg, #6c63ff, #c77dff);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 1000;
+}
+
+/* ---------- LEFT ---------- */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Optional Back Button */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: linear-gradient(135deg, #ffffff, #f1eaff);
+  color: #6c63ff;
+
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(108, 99, 255, 0.35);
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  box-shadow: 0 10px 22px rgba(108, 99, 255, 0.5);
+}
+
+/* ---------- RIGHT ---------- */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---------- COMMON BUTTON ---------- */
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 7px 14px;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- ADMIN BUTTON ---------- */
+
+.header-btn.admin {
+  background: linear-gradient(135deg, #ffffff, #f3e8ff);
+  color: #6c63ff;
+}
+
+.header-btn.admin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(108, 99, 255, 0.5);
+}
+
+/* ---------- PROFILE BUTTON ---------- */
+
+.header-btn.profile {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4b0082;
+}
+
+.header-btn.profile:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+/* ---------- LOGOUT BUTTON ---------- */
+
+.header-btn.logout {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.header-btn.logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(239, 68, 68, 0.6);
+}
+
+.header-btn.logout:active {
+  transform: scale(0.95);
+}
